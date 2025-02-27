@@ -1,4 +1,4 @@
-package task6;
+package kyu5.java.task6;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package task8;
+package kyu5.java.task8;
 
 // https://www.codewars.com/kata/52685f7382004e774f0001f7/java
 public class HumanReadableTime {

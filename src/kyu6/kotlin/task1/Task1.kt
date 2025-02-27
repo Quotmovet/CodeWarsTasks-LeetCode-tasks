@@ -1,4 +1,4 @@
-package task1
+package kyu6.kotlin.task1
 
 import kotlin.random.Random
 

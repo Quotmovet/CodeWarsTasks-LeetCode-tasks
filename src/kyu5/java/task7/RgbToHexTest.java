@@ -1,4 +1,4 @@
-package task7;
+package kyu5.java.task7;
 
 import org.testng.annotations.Test;
 

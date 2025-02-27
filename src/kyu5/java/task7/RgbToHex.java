@@ -1,4 +1,4 @@
-package task7;
+package kyu5.java.task7;
 
 // https://www.codewars.com/kata/513e08acc600c94f01000001
 public class RgbToHex {

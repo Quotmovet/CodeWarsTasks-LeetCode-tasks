@@ -1,4 +1,4 @@
-package task2
+package kyu6.kotlin.task2
 
 // https://www.codewars.com/kata/51b6249c4612257ac0000005/train/kotlin
 class Task2 {

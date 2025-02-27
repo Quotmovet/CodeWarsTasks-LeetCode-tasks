@@ -1,4 +1,4 @@
-package task5;
+package kyu5.java.task5;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +16,7 @@ public class Josephus {
             T value = items.remove(index);
             result.add(value);
 
-            System.out.println(items.toString() + " => " + value + " is counted out and goes into the result " + result.toString());
+            System.out.println(items + " => " + value + " is counted out and goes into the result " + result);
         }
 
         return result;

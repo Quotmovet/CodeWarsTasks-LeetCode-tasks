@@ -1,4 +1,4 @@
-package task9;
+package kyu5.java.task9;
 
 import java.util.Map;
 

@@ -1,4 +1,4 @@
-package task3
+package kyu6.kotlin.task3
 
 import org.testng.Assert.assertEquals
 import org.testng.annotations.Test
