@@ -1,5 +1,6 @@
 package codeWars.kyu6.kotlin.task1
 
+import java.sql.DriverManager.println
 import kotlin.random.Random
 
 // https://www.codewars.com/kata/534d2f5b5371ecf8d2000a08

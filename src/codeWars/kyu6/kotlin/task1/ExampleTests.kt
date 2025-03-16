@@ -3,6 +3,7 @@ package codeWars.kyu6.kotlin.task1
 import org.testng.Assert.assertTrue
 import org.testng.annotations.Test
 
+
 class ExampleTests {
     private fun Array<IntArray>.stringify(): String = "[\n" + Array(this.size,{ "  [ " + this[it].map { n -> n.toString() }.joinToString(", ") + " ]" }).joinToString("\n") + "\n]"
 

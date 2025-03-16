@@ -1,7 +1,7 @@
 package codeWars.kyu4.kotlin.task25
 
-import org.junit.jupiter.api.Test
 import org.testng.Assert.assertEquals
+import org.testng.annotations.Test
 
 class SumOfDividedTest {
 

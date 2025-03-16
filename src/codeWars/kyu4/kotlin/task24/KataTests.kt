@@ -1,8 +1,8 @@
 package codeWars.kyu4.kotlin.task24
 
 import codeWars.kyu4.kotlin.task24.NextBiggerNumber.nextBiggerNumber
-import org.junit.jupiter.api.Test
 import org.testng.Assert.assertEquals
+import org.testng.annotations.Test
 
 class KataTests {
 
