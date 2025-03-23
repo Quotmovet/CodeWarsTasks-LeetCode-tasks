@@ -21,7 +21,7 @@ public class SelectAndInsertSorterTest {
 
     @Test
     void testSelectAndInsertSortIntegersAscending() {
-        SelectAndSelectAndInsertSorter<Integer> sorter = new SelectAndSelectAndInsertSorter<>(integerComparator);
+        SelectAndSelectAndInsertSorterFunction<Integer> sorter = new SelectAndSelectAndInsertSorterFunction<>(integerComparator);
         sorter.setAscending(true);
 
         List<Integer> input = Arrays.asList(64, 34, 25, 12, 22, 11, 90);
@@ -37,7 +37,7 @@ public class SelectAndInsertSorterTest {
 
     @Test
     void testSelectAndInsertSortIntegersDescending() {
-        SelectAndSelectAndInsertSorter<Integer> sorter = new SelectAndSelectAndInsertSorter<>(integerComparator);
+        SelectAndSelectAndInsertSorterFunction<Integer> sorter = new SelectAndSelectAndInsertSorterFunction<>(integerComparator);
         sorter.setAscending(false);
 
         List<Integer> input = Arrays.asList(64, 34, 25, 12, 22, 11, 90);
@@ -51,7 +51,7 @@ public class SelectAndInsertSorterTest {
 
     @Test
     void testSelectAndInsertSortStringsAscending() {
-        SelectAndSelectAndInsertSorter<String> sorter = new SelectAndSelectAndInsertSorter<>(stringComparator);
+        SelectAndSelectAndInsertSorterFunction<String> sorter = new SelectAndSelectAndInsertSorterFunction<>(stringComparator);
         sorter.setAscending(true);
 
         List<String> input = Arrays.asList("banana", "apple", "cherry");
@@ -65,7 +65,7 @@ public class SelectAndInsertSorterTest {
 
     @Test
     void testSelectAndInsertSortStringsDescending() {
-        SelectAndSelectAndInsertSorter<String> sorter = new SelectAndSelectAndInsertSorter<>(stringComparator);
+        SelectAndSelectAndInsertSorterFunction<String> sorter = new SelectAndSelectAndInsertSorterFunction<>(stringComparator);
         sorter.setAscending(false);
 
         List<String> input = Arrays.asList("banana", "apple", "cherry");
@@ -79,7 +79,7 @@ public class SelectAndInsertSorterTest {
 
     @Test
     void testEmptyList() {
-        SelectAndSelectAndInsertSorter<Integer> sorter = new SelectAndSelectAndInsertSorter<>(integerComparator);
+        SelectAndSelectAndInsertSorterFunction<Integer> sorter = new SelectAndSelectAndInsertSorterFunction<>(integerComparator);
         sorter.setAscending(true);
 
         List<Integer> input = List.of();
@@ -93,7 +93,7 @@ public class SelectAndInsertSorterTest {
 
     @Test
     void testSingleElementList() {
-        SelectAndSelectAndInsertSorter<Integer> sorter = new SelectAndSelectAndInsertSorter<>(integerComparator);
+        SelectAndSelectAndInsertSorterFunction<Integer> sorter = new SelectAndSelectAndInsertSorterFunction<>(integerComparator);
         sorter.setAscending(true);
 
         List<Integer> input = List.of(42);
@@ -107,7 +107,7 @@ public class SelectAndInsertSorterTest {
 
     @Test
     void testAlreadySortedList() {
-        SelectAndSelectAndInsertSorter<Integer> sorter = new SelectAndSelectAndInsertSorter<>(integerComparator);
+        SelectAndSelectAndInsertSorterFunction<Integer> sorter = new SelectAndSelectAndInsertSorterFunction<>(integerComparator);
         sorter.setAscending(true);
 
         List<Integer> input = Arrays.asList(1, 2, 3, 4, 5);

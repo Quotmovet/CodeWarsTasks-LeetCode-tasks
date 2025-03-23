@@ -3,13 +3,13 @@ package algo_and_data_structures.sort.bubblesort;
 import java.util.Comparator;
 import java.util.List;
 
-public class BubbleSorter<T> implements BubbleSorterAPI<T> {
+public class BubbleSorterFunction<T> implements BubbleSorterAPI<T> {
 
     private final Comparator<T> comparator;
     private boolean ascending = true;
 
     // Конструктор с компаратором
-    public BubbleSorter(Comparator<T> comparator) {
+    public BubbleSorterFunction(Comparator<T> comparator) {
         this.comparator = comparator;
     }
 

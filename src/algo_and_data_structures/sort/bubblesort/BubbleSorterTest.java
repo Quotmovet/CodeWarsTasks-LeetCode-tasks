@@ -25,7 +25,7 @@ public class BubbleSorterTest {
 
     @Test
     void testBubbleSortIntegersAscending() {
-        BubbleSorter<Integer> sorter = new BubbleSorter<>(integerComparator);
+        BubbleSorterFunction<Integer> sorter = new BubbleSorterFunction<>(integerComparator);
         sorter.setAscending(true);
 
         List<Integer> input = Arrays.asList(64, 34, 25, 12, 22, 11, 90);
@@ -38,7 +38,7 @@ public class BubbleSorterTest {
 
     @Test
     void testBubbleSortIntegersDescending() {
-        BubbleSorter<Integer> sorter = new BubbleSorter<>(integerComparator);
+        BubbleSorterFunction<Integer> sorter = new BubbleSorterFunction<>(integerComparator);
         sorter.setAscending(false);
 
         List<Integer> input = Arrays.asList(64, 34, 25, 12, 22, 11, 90);
@@ -50,7 +50,7 @@ public class BubbleSorterTest {
 
     @Test
     void testBubbleSortStringsAscending() {
-        BubbleSorter<String> sorter = new BubbleSorter<>(stringComparator);
+        BubbleSorterFunction<String> sorter = new BubbleSorterFunction<>(stringComparator);
         sorter.setAscending(true);
 
         List<String> input = Arrays.asList("banana", "apple", "cherry");
@@ -62,7 +62,7 @@ public class BubbleSorterTest {
 
     @Test
     void testBubbleSortStringsDescending() {
-        BubbleSorter<String> sorter = new BubbleSorter<>(stringComparator);
+        BubbleSorterFunction<String> sorter = new BubbleSorterFunction<>(stringComparator);
         sorter.setAscending(false);
 
         List<String> input = Arrays.asList("banana", "apple", "cherry");
@@ -74,7 +74,7 @@ public class BubbleSorterTest {
 
     @Test
     void testEmptyList() {
-        BubbleSorter<Integer> sorter = new BubbleSorter<>(integerComparator);
+        BubbleSorterFunction<Integer> sorter = new BubbleSorterFunction<>(integerComparator);
         sorter.setAscending(true);
 
         List<Integer> input = List.of();
@@ -86,7 +86,7 @@ public class BubbleSorterTest {
 
     @Test
     void testSingleElementList() {
-        BubbleSorter<Integer> sorter = new BubbleSorter<>(integerComparator);
+        BubbleSorterFunction<Integer> sorter = new BubbleSorterFunction<>(integerComparator);
         sorter.setAscending(true);
 
         List<Integer> input = List.of(42);
@@ -98,7 +98,7 @@ public class BubbleSorterTest {
 
     @Test
     void testAlreadySortedList() {
-        BubbleSorter<Integer> sorter = new BubbleSorter<>(integerComparator);
+        BubbleSorterFunction<Integer> sorter = new BubbleSorterFunction<>(integerComparator);
         sorter.setAscending(true);
 
         List<Integer> input = Arrays.asList(1, 2, 3, 4, 5);

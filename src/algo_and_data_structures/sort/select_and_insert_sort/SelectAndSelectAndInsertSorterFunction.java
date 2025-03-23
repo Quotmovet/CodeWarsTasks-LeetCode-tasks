@@ -3,12 +3,12 @@ package algo_and_data_structures.sort.select_and_insert_sort;
 import java.util.Comparator;
 import java.util.List;
 
-public class SelectAndSelectAndInsertSorter<T> implements SelectAndInsertSorterAPI<T> {
+public class SelectAndSelectAndInsertSorterFunction<T> implements SelectAndInsertSorterAPI<T> {
 
     private final Comparator<T> comparator;
     private boolean ascending = true;
 
-    public SelectAndSelectAndInsertSorter(Comparator<T> comparator) {
+    public SelectAndSelectAndInsertSorterFunction(Comparator<T> comparator) {
         this.comparator = comparator;
     }
 
